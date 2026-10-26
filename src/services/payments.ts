@@ -1,0 +1,5 @@
+const BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000/api';
+async function post(path:string,data:unknown){const response=await fetch(`${BASE}${path}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const result=await response.json();if(!response.ok)throw new Error(result.error||'Request failed');return result;}
+export async function createPaymentOrder(data:unknown):Promise<{key_id:string;amount:number;currency:string;order_id:string;razorpay_order_id:string}>{return post('/payments/razorpay/create-order',data);}
+export async function verifyPayment(data:{razorpay_order_id:string;razorpay_payment_id:string;razorpay_signature:string}){return post('/payments/razorpay/verify',data);}
+export async function loadRazorpay(){if((window as any).Razorpay)return;await new Promise<void>((resolve,reject)=>{const script=document.createElement('script');script.src='https://checkout.razorpay.com/v1/checkout.js';script.onload=()=>resolve();script.onerror=()=>reject(new Error('Razorpay could not load'));document.body.appendChild(script);});}

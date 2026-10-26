@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Custom Product Designer | SHABEENA STUDIO</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#1a1c1b",
+            "surface": "#f9f9f7",
+            "primary-fixed": "#ffdad2",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#929390",
+            "on-secondary-container": "#636262",
+            "background": "#f9f9f7",
+            "on-secondary-fixed": "#1c1b1b",
+            "on-primary-fixed-variant": "#8c1900",
+            "surface-tint": "#b52603",
+            "surface-container-highest": "#e2e3e1",
+            "inverse-on-surface": "#f1f1ef",
+            "tertiary-fixed": "#e2e3df",
+            "secondary-fixed": "#e5e2e1",
+            "on-tertiary-fixed": "#1a1c1a",
+            "on-primary-container": "#5a0c00",
+            "surface-container": "#eeeeec",
+            "primary-fixed-dim": "#ffb4a3",
+            "surface-bright": "#f9f9f7",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dadad8",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#ffb4a3",
+            "outline-variant": "#e3beb6",
+            "surface-variant": "#e2e3e1",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#c6c7c3",
+            "secondary": "#5f5e5e",
+            "surface-container-low": "#f4f4f2",
+            "secondary-container": "#e2dfde",
+            "on-surface-variant": "#5b403a",
+            "primary-container": "#ff5a36",
+            "on-tertiary-fixed-variant": "#454745",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#2a2c2a",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e8e8e6",
+            "tertiary": "#5d5f5c",
+            "on-primary-fixed": "#3d0600",
+            "on-secondary-fixed-variant": "#474746",
+            "primary": "#b52603",
+            "on-error": "#ffffff",
+            "outline": "#8f7069",
+            "on-background": "#1a1c1b",
+            "inverse-surface": "#2f3130",
+            "secondary-fixed-dim": "#c8c6c5",
+            "on-secondary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-3xl": "6rem",
+            "gutter": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "space-2xs": "0.25rem",
+            "space-sm": "0.75rem",
+            "margin-desktop": "4rem",
+            "margin-tablet": "2rem",
+            "space-xs": "0.5rem",
+            "space-md": "1rem",
+            "margin": "1rem",
+            "gutter-desktop": "2rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "price-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "price-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "label-caps": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "subhead": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "display-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-md": ["1.125rem", { "lineHeight": "1.375rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["2rem", { "lineHeight": "2.375rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-lg": ["1.75rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display": ["4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "label-caps": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "subhead": ["1.125rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .grid-pattern {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    }
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md select-none">
+<!-- TOP STUDIO TASK HEADER (Task-focused screen: Shared Global Nav is suppressed per Semantic Shell Mandate) -->
+<header class="sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-surface-container-highest px-4 md:px-6 h-16 flex items-center justify-between transition-all">
+<div class="flex items-center gap-3 md:gap-5">
+<a class="w-9 h-9 rounded-sm border border-surface-container-highest flex items-center justify-center bg-surface-container-lowest text-on-surface hover:border-on-surface transition-colors" href="#" title="Back to Catalog">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-sm md:text-base font-bold text-on-surface tracking-tight">Custom Project: Untitled_01.tee</span>
+<span class="hidden md:inline-flex items-center px-1.5 py-0.5 rounded-sm bg-surface-container-highest font-label-caps text-on-surface-variant uppercase">D2C v2.4</span>
+</div>
+<div class="flex items-center gap-1.5 text-xs text-secondary">
+<span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+<span class="font-body-sm text-xs">Saved just now</span>
+<span class="text-surface-container-highest">•</span>
+<span class="hidden sm:inline font-body-sm text-xs text-on-surface-variant font-mono">240 GSM Heavy Cotton</span>
+</div>
+</div>
+</div>
+<!-- Center Studio Status Tag -->
+<div class="hidden lg:flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-sm border border-surface-container-highest">
+<span class="material-symbols-outlined text-primary-container text-base">verified</span>
+<span class="font-label-caps text-on-surface uppercase text-[10px] tracking-wider font-semibold">DTF HD Color Matrix • Active</span>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-2 sm:gap-3">
+<button class="hidden sm:flex items-center gap-1.5 px-3 py-2 text-on-surface font-body-sm font-medium border border-surface-container-highest rounded-sm hover:border-on-surface bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Preview</span>
+</button>
+<button class="h-10 px-4 md:px-5 rounded-sm bg-primary-container text-on-primary font-price-md text-sm md:text-base flex items-center gap-2 shadow-sm hover:bg-[#e84a27] transition-colors">
+<span>Add to Bag</span>
+<span class="opacity-40">|</span>
+<span class="font-bold">₹1,799</span>
+</button>
+</div>
+</header>
+<!-- TWO-COLUMN STUDIO WORKBENCH -->
+<main class="flex-1 flex flex-col lg:flex-row w-full max-w-[1720px] mx-auto overflow-hidden">
+<!-- LEFT COLUMN: LIVE MOCKUP & CANVAS WORK AREA (65% width) -->
+<section class="w-full lg:w-[63%] xl:w-[66%] min-h-[550px] lg:min-h-[calc(100vh-4rem)] flex flex-col relative bg-surface border-r border-surface-container-highest">
+<!-- Studio Top Canvas Toolbar -->
+<div class="w-full px-4 md:px-6 py-2.5 bg-surface-container-low/70 border-b border-surface-container-highest flex items-center justify-between">
+<!-- DPI Check Pill -->
+<div class="flex items-center gap-2">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-emerald-50 border border-emerald-200 text-emerald-800">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span class="font-label-caps text-[10px] uppercase font-bold tracking-wider">High-Res 300 DPI Detected</span>
+</div>
+<span class="hidden sm:inline font-mono text-[11px] text-secondary">A3 DTF (297 × 420 mm)</span>
+</div>
+<!-- Zoom, Grid, Center Canvas Controls -->
+<div class="flex items-center gap-1 bg-surface-container-lowest border border-surface-container-highest rounded-sm p-0.5 shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded-sm" id="zoomOutBtn" title="Zoom Out">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-mono text-xs px-2 text-on-surface font-medium" id="zoomLevel">100%</span>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded-sm" id="zoomInBtn" title="Zoom In">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<div class="w-[1px] h-4 bg-surface-container-highest my-auto mx-0.5"></div>
+<button class="px-2 h-7 flex items-center gap-1 text-xs text-on-surface hover:bg-surface-container transition-colors rounded-sm" id="toggleGridBtn" title="Toggle Print Safe Grid">
+<span class="material-symbols-outlined text-[15px]">grid_on</span>
+<span class="text-[11px] font-medium hidden sm:inline">Grid</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors rounded-sm" title="Center Artwork Alignment">
+<span class="material-symbols-outlined text-[16px]">filter_center_focus</span>
+</button>
+</div>
+</div>
+<!-- Interactive Canvas Stage -->
+<div class="flex-1 relative overflow-hidden flex items-center justify-center p-4 md:p-8 grid-pattern bg-[#f6f6f3]" id="canvasViewport">
+<!-- Mockup Garment Container (Scaleable) -->
+<div class="relative w-full max-w-[480px] sm:max-w-[530px] md:max-w-[560px] aspect-[3/4] flex items-center justify-center transition-transform duration-150" id="garmentContainer">
+<!-- Realistic Heavyweight Oversized Boxy Tee Mockup -->
+<img class="absolute inset-0 w-full h-full object-contain pointer-events-none drop-shadow-md select-none" data-alt="Photorealistic studio shot of an oversized heavyweight washed black cotton streetwear t-shirt cleanly laid flat against a neutral light grey background. Minimalist aesthetic, rich textile weave and soft tactile fabric folds. High-end lookbook catalog aesthetic with crisp studio lighting." id="garmentImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz1y2uYWBENSL_kQoWrQSNO7acytAkxEJZzNjXDYitOUoUpDIeR1BsiOmb1lvmj6n1q4iZIvMN05wEfCtLFODXVdCGmATA5vFsyo3SenCPMzhDPsUOqR3pG-SR7KBfoID96_rdx1enkCvDCWTMWUKzZZg0HjXpY_4dOKjVPKWy1vcefeiQRd6AK5imS8m90kskJets5ATBPBD6-Y-ZiXy3FgUA144pDrJM71OIu2ty4yW0Wy2QDWw"/>
+<!-- PRINT-SAFE AREA (12" x 16" bounds) -->
+<div class="relative z-10 w-[58%] h-[56%] -mt-6 border-2 border-dashed border-primary-container/80 rounded-sm flex items-center justify-center p-2 bg-primary-container/[0.02]" id="printBoundary">
+<!-- Safe Area Badge Indicator -->
+<div class="absolute -top-3 left-4 px-2 py-0.5 bg-inverse-surface text-inverse-on-surface text-[9px] font-mono tracking-widest uppercase rounded-sm border border-surface-container-highest shadow-sm">
+              PRINT-SAFE AREA (12" x 16")
+            </div>
+<!-- Dimension Guides -->
+<div class="absolute -left-5 top-1/2 -translate-y-1/2 -rotate-90 text-[9px] font-mono text-secondary tracking-widest uppercase">
+              40.6 CM
+            </div>
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[9px] font-mono text-secondary tracking-widest uppercase">
+              30.5 CM
+            </div>
+<!-- Active Draggable Artwork Component with Transformer Handles -->
+<div class="relative z-20 p-3 cursor-grab active:cursor-grabbing border border-primary-container bg-black/[0.02] transition-shadow shadow-sm group" id="artworkElement">
+<!-- Transformer Pin: Top-Left Scale -->
+<div class="absolute -top-2 -left-2 w-3.5 h-3.5 bg-surface-container-lowest border-2 border-primary-container rounded-sm shadow-sm hover:scale-125 transition-transform cursor-nwse-resize"></div>
+<!-- Transformer Pin: Top-Right Rotate Badge -->
+<button class="absolute -top-3.5 -right-3.5 w-6 h-6 bg-inverse-surface text-inverse-on-surface rounded-full flex items-center justify-center shadow-md hover:bg-primary-container transition-colors cursor-pointer" title="Rotate Artwork">
+<span class="material-symbols-outlined text-[13px]">refresh</span>
+</button>
+<!-- Transformer Pin: Bottom-Left Delete -->
+<button class="absolute -bottom-3.5 -left-3.5 w-6 h-6 bg-surface-container-lowest border border-surface-container-highest text-error rounded-full flex items-center justify-center shadow-md hover:bg-error hover:text-white transition-colors cursor-pointer" title="Remove Layer">
+<span class="material-symbols-outlined text-[13px]">close</span>
+</button>
+<!-- Transformer Pin: Bottom-Right Scale -->
+<div class="absolute -bottom-2 -right-2 w-3.5 h-3.5 bg-surface-container-lowest border-2 border-primary-container rounded-sm shadow-sm hover:scale-125 transition-transform cursor-nwse-resize"></div>
+<!-- Graphic Vector & Typography Motif (Editable Live Placement) -->
+<div class="flex flex-col items-center justify-center text-center p-2 text-white select-none pointer-events-none drop-shadow">
+<!-- Geometric Brutalist Wireframe Graphic Motif -->
+<div class="w-24 h-12 mb-2 border border-white/90 grid grid-cols-4 grid-rows-2 relative overflow-hidden">
+<div class="border-r border-b border-white/40"></div>
+<div class="border-r border-b border-white/40 bg-white/20"></div>
+<div class="border-r border-b border-white/40"></div>
+<div class="border-b border-white/40 bg-white/10"></div>
+<div class="border-r border-white/40 bg-white/30"></div>
+<div class="border-r border-white/40"></div>
+<div class="border-r border-white/40 bg-white/20"></div>
+<div class="border-white/40"></div>
+<div class="absolute inset-0 flex items-center justify-center font-mono text-[8px] tracking-widest text-white/90">
+                    SHB-240-IND
+                  </div>
+</div>
+<h2 class="font-headline-sm text-sm sm:text-base font-extrabold uppercase tracking-tight text-white leading-tight" id="liveDesignText">
+                  NOT AVAILABLE IN STORES
+                </h2>
+<div class="mt-1 flex items-center gap-2">
+<span class="h-[1px] w-5 bg-white/60"></span>
+<p class="font-mono text-[9px] uppercase tracking-widest text-white/90 font-semibold">
+                    NEW DELHI 2024
+                  </p>
+<span class="h-[1px] w-5 bg-white/60"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Studio Placement Alignment Crosshair Overlays -->
+<div class="absolute inset-x-0 top-1/2 border-t border-secondary/15 pointer-events-none"></div>
+<div class="absolute inset-y-0 left-1/2 border-l border-secondary/15 pointer-events-none"></div>
+</div>
+</div>
+<!-- Bottom Floating Perspective & View Switcher Bar -->
+<div class="w-full px-4 py-3 bg-surface border-t border-surface-container-highest flex items-center justify-between">
+<!-- View Angle Selector -->
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+<button class="px-3 py-1.5 rounded-sm bg-inverse-surface text-inverse-on-surface font-body-sm text-xs font-semibold tracking-wide border border-inverse-surface flex items-center gap-1.5 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Front View</span>
+</button>
+<button class="px-3 py-1.5 rounded-sm bg-surface-container-lowest text-on-surface font-body-sm text-xs font-medium border border-surface-container-highest hover:border-on-surface transition-colors flex items-center gap-1.5">
+<span>Back View</span>
+<span class="text-[10px] text-secondary font-mono">₹0</span>
+</button>
+<button class="px-3 py-1.5 rounded-sm bg-surface-container-lowest text-on-surface font-body-sm text-xs font-medium border border-surface-container-highest hover:border-on-surface transition-colors">
+<span>Left Sleeve</span>
+</button>
+<button class="px-3 py-1.5 rounded-sm bg-surface-container-lowest text-on-surface font-body-sm text-xs font-medium border border-surface-container-highest hover:border-on-surface transition-colors hidden sm:block">
+<span>Woven Neck Label</span>
+</button>
+</div>
+<!-- Garment Spec Overlay Trigger -->
+<button class="hidden md:flex items-center gap-1 text-xs text-on-surface font-mono hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>Print Spec Sheet</span>
+</button>
+</div>
+</section>
+<!-- RIGHT COLUMN: CUSTOMIZATION CONTROL PANEL (35% width) -->
+<section class="w-full lg:w-[37%] xl:w-[34%] bg-surface-container-lowest overflow-y-auto max-h-[calc(100vh-4rem)] flex flex-col divide-y divide-surface-container-highest">
+<!-- Segment 1: Product Selector Matrix Bar -->
+<div class="p-4 md:p-5">
+<label class="block font-label-caps text-on-surface-variant uppercase text-[11px] mb-2.5">
+          Select Garment Silhouette
+        </label>
+<div class="grid grid-cols-4 gap-2">
+<!-- T-Shirt (Active) -->
+<div class="flex flex-col items-center p-2 rounded-sm border-2 border-on-surface bg-surface cursor-pointer text-center group">
+<div class="w-9 h-9 rounded-sm bg-surface-container-high flex items-center justify-center mb-1 text-on-surface">
+<span class="material-symbols-outlined text-lg">apparel</span>
+</div>
+<span class="font-body-sm text-xs font-bold text-on-surface">T-Shirt</span>
+<span class="font-mono text-[10px] text-secondary">₹1,299</span>
+</div>
+<!-- Hoodie -->
+<div class="flex flex-col items-center p-2 rounded-sm border border-surface-container-highest hover:border-on-surface bg-surface-container-lowest cursor-pointer text-center group transition-colors">
+<div class="w-9 h-9 rounded-sm bg-surface-container flex items-center justify-center mb-1 text-secondary group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg">dry_cleaning</span>
+</div>
+<span class="font-body-sm text-xs font-medium text-on-surface">Hoodie</span>
+<span class="font-mono text-[10px] text-secondary">₹2,499</span>
+</div>
+<!-- Mug -->
+<div class="flex flex-col items-center p-2 rounded-sm border border-surface-container-highest hover:border-on-surface bg-surface-container-lowest cursor-pointer text-center group transition-colors">
+<div class="w-9 h-9 rounded-sm bg-surface-container flex items-center justify-center mb-1 text-secondary group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg">coffee</span>
+</div>
+<span class="font-body-sm text-xs font-medium text-on-surface">Ceramic Mug</span>
+<span class="font-mono text-[10px] text-secondary">₹599</span>
+</div>
+<!-- Cap -->
+<div class="flex flex-col items-center p-2 rounded-sm border border-surface-container-highest hover:border-on-surface bg-surface-container-lowest cursor-pointer text-center group transition-colors">
+<div class="w-9 h-9 rounded-sm bg-surface-container flex items-center justify-center mb-1 text-secondary group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg">sports_baseball</span>
+</div>
+<span class="font-body-sm text-xs font-medium text-on-surface">Snapback Cap</span>
+<span class="font-mono text-[10px] text-secondary">₹899</span>
+</div>
+</div>
+</div>
+<!-- Segment 2: Blank Specifications (Fabric, Color, Size) -->
+<div class="p-4 md:p-5 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-on-surface-variant uppercase text-[11px]">Step 01 • Garment Base</span>
+<span class="font-mono text-xs text-primary font-semibold">Ready to Personalize</span>
+</div>
+<!-- Fabric Spec Callout -->
+<div class="p-3 bg-surface rounded-sm border border-surface-container-highest flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface text-lg mt-0.5">texture</span>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-on-surface">240 GSM 100% Combed Cotton</h4>
+<p class="font-body-sm text-xs text-secondary mt-0.5">Heavyweight boxy drop-shoulder cut, bio-washed and pre-shrunk for premium streetwear drape.</p>
+</div>
+</div>
+<!-- Garment Color Palette -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-body-sm text-xs font-semibold text-on-surface">Colorway:</span>
+<span class="font-mono text-xs text-secondary font-medium" id="selectedColorLabel">Washed Black</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Washed Black (Selected) -->
+<button class="color-swatch relative w-7 h-7 rounded-full bg-[#1e1e1e] border border-surface-container-highest ring-2 ring-offset-2 ring-on-surface focus:outline-none transition-all" data-color="Washed Black"></button>
+<!-- Vintage Bone White -->
+<button class="color-swatch relative w-7 h-7 rounded-full bg-[#eae7df] border border-surface-container-highest hover:ring-2 hover:ring-offset-2 hover:ring-secondary focus:outline-none transition-all" data-color="Vintage Bone White"></button>
+<!-- Forest Moss -->
+<button class="color-swatch relative w-7 h-7 rounded-full bg-[#2d3a2e] border border-surface-container-highest hover:ring-2 hover:ring-offset-2 hover:ring-secondary focus:outline-none transition-all" data-color="Forest Moss"></button>
+<!-- Dusty Slate -->
+<button class="color-swatch relative w-7 h-7 rounded-full bg-[#4e5b67] border border-surface-container-highest hover:ring-2 hover:ring-offset-2 hover:ring-secondary focus:outline-none transition-all" data-color="Dusty Slate"></button>
+<!-- Rust Brown -->
+<button class="color-swatch relative w-7 h-7 rounded-full bg-[#6d3625] border border-surface-container-highest hover:ring-2 hover:ring-offset-2 hover:ring-secondary focus:outline-none transition-all" data-color="Rust Brown"></button>
+</div>
+</div>
+<!-- Size Chips Grid -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-body-sm text-xs font-semibold text-on-surface">Garment Fit Size:</span>
+<a class="font-body-sm text-xs text-primary-container font-medium hover:underline flex items-center gap-0.5" href="#">
+<span>Size Chart &amp; Fit Guide</span>
+<span class="material-symbols-outlined text-[14px]">straighten</span>
+</a>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="size-btn h-11 rounded-sm border border-surface-container-highest font-mono text-xs font-semibold text-on-surface hover:border-on-surface transition-colors flex items-center justify-center">S</button>
+<button class="size-btn h-11 rounded-sm border border-surface-container-highest font-mono text-xs font-semibold text-on-surface hover:border-on-surface transition-colors flex items-center justify-center">M</button>
+<!-- L Selected -->
+<button class="size-btn h-11 rounded-sm bg-inverse-surface text-inverse-on-surface font-mono text-xs font-bold border border-inverse-surface flex items-center justify-center shadow-sm">L</button>
+<button class="size-btn h-11 rounded-sm border border-surface-container-highest font-mono text-xs font-semibold text-on-surface hover:border-on-surface transition-colors flex items-center justify-center">XL</button>
+<button class="size-btn h-11 rounded-sm border border-surface-container-highest font-mono text-xs font-semibold text-on-surface hover:border-on-surface transition-colors flex items-center justify-center">XXL</button>
+</div>
+</div>
+</div>
+<!-- Segment 3: Customization Layers / Tools Tabs -->
+<div class="p-4 md:p-5 space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-on-surface-variant uppercase text-[11px]">Step 02 • Artwork &amp; Typography</span>
+<span class="font-mono text-xs text-secondary">Front Chest Layer</span>
+</div>
+<!-- Tool Sub-tabs -->
+<div class="flex border-b border-surface-container-highest text-xs font-medium">
+<button class="tab-btn pb-2 px-3 border-b-2 border-primary-container font-semibold text-primary-container flex items-center gap-1.5" data-tab="artwork">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span>Upload Artwork</span>
+</button>
+<button class="tab-btn pb-2 px-3 text-secondary hover:text-on-surface border-b-2 border-transparent transition-colors flex items-center gap-1.5" data-tab="text">
+<span class="material-symbols-outlined text-[16px]">title</span>
+<span>Add Text</span>
+</button>
+<button class="tab-btn pb-2 px-3 text-secondary hover:text-on-surface border-b-2 border-transparent transition-colors flex items-center gap-1.5" data-tab="clipart">
+<span class="material-symbols-outlined text-[16px]">category</span>
+<span>Symbols</span>
+</button>
+<button class="tab-btn pb-2 px-3 text-secondary hover:text-on-surface border-b-2 border-transparent transition-colors flex items-center gap-1.5" data-tab="layers">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+<span>Layers (2)</span>
+</button>
+</div>
+<!-- Tab Content 1: Upload Artwork -->
+<div class="space-y-3" id="tabContentArtwork">
+<div class="border-2 border-dashed border-surface-container-highest hover:border-primary-container bg-surface-container-low rounded-sm p-5 text-center transition-colors cursor-pointer group">
+<div class="w-10 h-10 mx-auto rounded-full bg-surface-container-lowest border border-surface-container-highest flex items-center justify-center mb-2 text-on-surface group-hover:text-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-xl">cloud_upload</span>
+</div>
+<p class="font-body-sm text-xs font-medium text-on-surface">
+              Drag &amp; Drop your PNG, SVG, or AI file here
+            </p>
+<p class="font-mono text-[10px] text-secondary mt-1">
+              Max 25MB • 300 DPI Transparent Vector recommended
+            </p>
+<div class="mt-3">
+<button class="px-3.5 py-1.5 rounded-sm bg-inverse-surface text-inverse-on-surface font-body-sm text-xs font-semibold hover:bg-black transition-colors shadow-sm">
+                Browse Files
+              </button>
+</div>
+</div>
+<!-- Active File Attachment Card -->
+<div class="p-2.5 bg-surface rounded-sm border border-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-sm bg-inverse-surface text-white flex items-center justify-center font-mono text-[10px] font-bold">
+                SVG
+              </div>
+<div class="flex flex-col">
+<span class="font-body-sm text-xs font-medium text-on-surface">Geometric_Grid_2024.svg</span>
+<span class="font-mono text-[10px] text-emerald-700">Vector Layer • Scaled at 100%</span>
+</div>
+</div>
+<button class="text-secondary hover:text-error transition-colors p-1" title="Delete Uploaded Artwork">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+<!-- Tab Content 2: Text Controls -->
+<div class="space-y-3" id="tabContentText">
+<div>
+<label class="block font-body-sm text-xs font-semibold text-on-surface mb-1">Text String Content</label>
+<input class="w-full bg-surface border border-surface-container-highest rounded-sm px-3 py-2 text-xs font-body-sm focus:border-on-surface focus:ring-0 outline-none uppercase font-semibold" id="textStringInput" type="text" value="NOT AVAILABLE IN STORES"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-body-sm text-[11px] font-medium text-secondary mb-1">Font Family</label>
+<select class="w-full bg-surface border border-surface-container-highest rounded-sm px-2 py-1.5 text-xs font-body-sm focus:border-on-surface outline-none">
+<option selected="">Monument Extended</option>
+<option>Editorial Grotesk</option>
+<option>Heavy Gothic</option>
+<option>Serif Display</option>
+</select>
+</div>
+<div>
+<label class="block font-body-sm text-[11px] font-medium text-secondary mb-1">Text Alignment</label>
+<div class="flex border border-surface-container-highest rounded-sm overflow-hidden bg-surface">
+<button class="flex-1 py-1 text-center hover:bg-surface-container-highest transition-colors text-secondary"><span class="material-symbols-outlined text-sm">format_align_left</span></button>
+<button class="flex-1 py-1 text-center bg-inverse-surface text-white"><span class="material-symbols-outlined text-sm">format_align_center</span></button>
+<button class="flex-1 py-1 text-center hover:bg-surface-container-highest transition-colors text-secondary"><span class="material-symbols-outlined text-sm">format_align_right</span></button>
+</div>
+</div>
+</div>
+<!-- Color & Scale slider -->
+<div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="text-secondary font-medium">Text Scale Size</span>
+<span class="font-mono text-on-surface">32 pt</span>
+</div>
+<input class="w-full accent-primary-container h-1 bg-surface-container-highest rounded-sm cursor-pointer" max="64" min="16" type="range" value="32"/>
+</div>
+<div>
+<span class="block text-xs font-semibold text-on-surface mb-1.5">Ink Color:</span>
+<div class="flex items-center gap-2">
+<button class="w-6 h-6 rounded-full bg-white border-2 border-on-surface shadow-sm"></button>
+<button class="w-6 h-6 rounded-full bg-[#ff5a36] border border-surface-container-highest"></button>
+<button class="w-6 h-6 rounded-full bg-[#ffd000] border border-surface-container-highest"></button>
+<button class="w-6 h-6 rounded-full bg-[#111111] border border-surface-container-highest"></button>
+<button class="w-6 h-6 rounded-full bg-[#1877f2] border border-surface-container-highest"></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Segment 4: Dynamic Transparent Pricing & Quantity -->
+<div class="p-4 md:p-5 bg-surface-container-low/40 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-on-surface-variant uppercase text-[11px]">Pricing Breakdown</span>
+<span class="font-mono text-[10px] text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded-sm">GST Included</span>
+</div>
+<div class="space-y-1.5 text-xs">
+<div class="flex justify-between text-secondary">
+<span>Base Garment (Heavyweight 240 GSM Tee)</span>
+<span class="font-mono text-on-surface">₹1,299</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Front Print (A3 DTF Full Color HD)</span>
+<span class="font-mono text-on-surface">₹400</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Back Print Configuration</span>
+<span class="font-mono text-secondary">₹0 (None)</span>
+</div>
+<div class="pt-2 border-t border-surface-container-highest flex justify-between items-baseline">
+<span class="font-headline-sm text-sm font-bold text-on-surface">Total Price per Unit</span>
+<span class="font-price-lg text-lg md:text-xl font-bold text-on-surface">₹1,699</span>
+</div>
+</div>
+<!-- Bulk Quantity Tier Incentive -->
+<div class="p-2 bg-primary-fixed/30 border border-primary-fixed-dim rounded-sm text-center">
+<p class="font-mono text-[11px] text-on-primary-fixed font-semibold">
+            Order 3+ for 10% off | 10+ for 25% off bulk rate
+          </p>
+</div>
+<!-- Quantity Stepper -->
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-xs font-semibold text-on-surface">Order Quantity:</span>
+<div class="flex items-center border border-surface-container-highest rounded-sm bg-surface-container-lowest">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" id="qtyDecBtn">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-9 text-center font-mono text-xs font-bold text-on-surface" id="qtyCounter">1</span>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" id="qtyIncBtn">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Segment 5: Primary Action Buttons & Guarantees -->
+<div class="p-4 md:p-5 space-y-2.5">
+<!-- Primary Action CTA Button -->
+<button class="w-full h-12 rounded-sm bg-primary-container text-on-primary font-headline-sm text-sm md:text-base font-semibold tracking-wide flex items-center justify-center gap-2 shadow-sm hover:bg-[#e84a27] active:scale-[0.99] transition-all">
+<span class="material-symbols-outlined text-lg">shopping_bag</span>
+<span>Add Custom Garment to Bag - ₹1,699</span>
+</button>
+<!-- Secondary Save Button -->
+<button class="w-full h-10 rounded-sm bg-surface-container-lowest text-on-surface border border-surface-container-highest font-body-sm text-xs font-semibold hover:border-on-surface transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">bookmark_border</span>
+<span>Save Design for Later</span>
+</button>
+<!-- Dispatch & Logistics Notice -->
+<div class="pt-2 flex items-center justify-center gap-1.5 text-center text-secondary">
+<span class="material-symbols-outlined text-sm text-on-surface">local_shipping</span>
+<span class="font-mono text-[11px]">Ships in 48-72 hours across India via BlueDart / Delhivery</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Micro-Interactions Script -->
+<script>
+    // Live Typography Synchronization
+    const textInput = document.getElementById('textStringInput');
+    const liveDesignText = document.getElementById('liveDesignText');
+
+    if (textInput && liveDesignText) {
+      textInput.addEventListener('input', (e) => {
+        liveDesignText.textContent = e.target.value || 'ENTER YOUR TEXT';
+      });
+    }
+
+    // Color Swatch Logic
+    const colorSwatches = document.querySelectorAll('.color-swatch');
+    const selectedColorLabel = document.getElementById('selectedColorLabel');
+
+    colorSwatches.forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        colorSwatches.forEach(s => s.classList.remove('ring-2', 'ring-offset-2', 'ring-on-surface'));
+        swatch.classList.add('ring-2', 'ring-offset-2', 'ring-on-surface');
+        if (selectedColorLabel) {
+          selectedColorLabel.textContent = swatch.getAttribute('data-color');
+        }
+      });
+    });
+
+    // Size Selector Chips Logic
+    const sizeBtns = document.querySelectorAll('.size-btn');
+    sizeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sizeBtns.forEach(b => {
+          b.className = 'size-btn h-11 rounded-sm border border-surface-container-highest font-mono text-xs font-semibold text-on-surface hover:border-on-surface transition-colors flex items-center justify-center';
+        });
+        btn.className = 'size-btn h-11 rounded-sm bg-inverse-surface text-inverse-on-surface font-mono text-xs font-bold border border-inverse-surface flex items-center justify-center shadow-sm';
+      });
+    });
+
+    // Quantity Increment / Decrement
+    const qtyCounter = document.getElementById('qtyCounter');
+    const qtyIncBtn = document.getElementById('qtyIncBtn');
+    const qtyDecBtn = document.getElementById('qtyDecBtn');
+    let quantity = 1;
+
+    if (qtyIncBtn && qtyDecBtn && qtyCounter) {
+      qtyIncBtn.addEventListener('click', () => {
+        quantity++;
+        qtyCounter.textContent = quantity;
+      });
+      qtyDecBtn.addEventListener('click', () => {
+        if (quantity > 1) {
+          quantity--;
+          qtyCounter.textContent = quantity;
+        }
+      });
+    }
+
+    // Studio Zoom Feature
+    let currentZoom = 100;
+    const garmentContainer = document.getElementById('garmentContainer');
+    const zoomLevel = document.getElementById('zoomLevel');
+    const zoomInBtn = document.getElementById('zoomInBtn');
+    const zoomOutBtn = document.getElementById('zoomOutBtn');
+
+    if (zoomInBtn && zoomOutBtn && garmentContainer && zoomLevel) {
+      zoomInBtn.addEventListener('click', () => {
+        if (currentZoom < 140) {
+          currentZoom += 10;
+          garmentContainer.style.transform = `scale(${currentZoom / 100})`;
+          zoomLevel.textContent = currentZoom + '%';
+        }
+      });
+
+      zoomOutBtn.addEventListener('click', () => {
+        if (currentZoom > 70) {
+          currentZoom -= 10;
+          garmentContainer.style.transform = `scale(${currentZoom / 100})`;
+          zoomLevel.textContent = currentZoom + '%';
+        }
+      });
+    }
+
+    // Grid Toggle Logic
+    const toggleGridBtn = document.getElementById('toggleGridBtn');
+    const canvasViewport = document.getElementById('canvasViewport');
+
+    if (toggleGridBtn && canvasViewport) {
+      toggleGridBtn.addEventListener('click', () => {
+        canvasViewport.classList.toggle('grid-pattern');
+      });
+    }
+  </script>
+</body></html>

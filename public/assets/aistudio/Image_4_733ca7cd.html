@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHABEENA STUDIO | Contemporary Streetwear &amp; Custom Garment Atelier</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface": "#1a1c1b",
+            "surface": "#f9f9f7",
+            "primary-fixed": "#ffdad2",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#929390",
+            "on-secondary-container": "#636262",
+            "background": "#f9f9f7",
+            "on-secondary-fixed": "#1c1b1b",
+            "on-primary-fixed-variant": "#8c1900",
+            "surface-tint": "#b52603",
+            "surface-container-highest": "#e2e3e1",
+            "inverse-on-surface": "#f1f1ef",
+            "tertiary-fixed": "#e2e3df",
+            "secondary-fixed": "#e5e2e1",
+            "on-tertiary-fixed": "#1a1c1a",
+            "on-primary-container": "#5a0c00",
+            "surface-container": "#eeeeec",
+            "primary-fixed-dim": "#ffb4a3",
+            "surface-bright": "#f9f9f7",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dadad8",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#ffb4a3",
+            "outline-variant": "#e3beb6",
+            "surface-variant": "#e2e3e1",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#c6c7c3",
+            "secondary": "#5f5e5e",
+            "surface-container-low": "#f4f4f2",
+            "secondary-container": "#e2dfde",
+            "on-surface-variant": "#5b403a",
+            "primary-container": "#ff5a36",
+            "on-tertiary-fixed-variant": "#454745",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#2a2c2a",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#e8e8e6",
+            "tertiary": "#5d5f5c",
+            "on-primary-fixed": "#3d0600",
+            "on-secondary-fixed-variant": "#474746",
+            "primary": "#b52603",
+            "on-error": "#ffffff",
+            "outline": "#8f7069",
+            "on-background": "#1a1c1b",
+            "inverse-surface": "#2f3130",
+            "secondary-fixed-dim": "#c8c6c5",
+            "on-secondary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-3xl": "6rem",
+            "gutter": "1.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-2xl": "4rem",
+            "space-2xs": "0.25rem",
+            "space-sm": "0.75rem",
+            "margin-desktop": "4rem",
+            "margin-tablet": "2rem",
+            "space-xs": "0.5rem",
+            "space-md": "1rem",
+            "margin": "1rem",
+            "gutter-desktop": "2rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "price-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "price-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "label-caps": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "subhead": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "display-mobile": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-md": ["1.125rem", { "lineHeight": "1.375rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-md": ["2rem", { "lineHeight": "2.375rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "price-lg": ["1.75rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display": ["4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "label-caps": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "subhead": ["1.125rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-mobile": ["2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "800" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .customizer-grid-pattern {
+      background-size: 20px 20px;
+      background-image: 
+        linear-gradient(to right, #e2e3e1 1px, transparent 1px),
+        linear-gradient(to bottom, #e2e3e1 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-white">
+<!-- 1. Top Announcement Bar -->
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-2 text-center border-b border-surface-container-highest/20">
+<div class="max-w-7xl mx-auto flex items-center justify-center gap-3">
+<span class="font-label-caps text-label-caps tracking-widest uppercase flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse inline-block"></span>
+        Complimentary Pan-India Express Shipping on Orders Above ₹1,499
+      </span>
+<span class="hidden md:inline text-secondary-fixed-dim">|</span>
+<span class="hidden md:inline font-body-sm text-body-sm text-inverse-on-surface/90">
+        WhatsApp Concierge: <a class="hover:text-primary-container transition-colors duration-150 font-medium" href="https://wa.me/919876543210">+91 98765 43210</a>
+</span>
+</div>
+</div>
+<!-- 2. Sticky Header (Shared Component: TopNavBar) -->
+<header class="bg-surface/90 backdrop-blur-md text-primary font-headline-sm text-headline-sm tracking-tight docked full-width top-0 sticky z-50 border-b border-surface-container-highest transition-all duration-200 ease-out">
+<div class="w-full px-4 md:px-8 max-w-7xl mx-auto flex items-center justify-between h-16">
+<!-- Brand Logo / Wordmark -->
+<a class="font-headline-sm text-headline-sm font-bold tracking-widest uppercase text-on-surface hover:opacity-90 transition-opacity" href="#">
+        SHABEENA STUDIO
+      </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary-container border-b-2 border-primary-container pb-1 font-semibold text-body-md transition-colors duration-150" href="#">Shop</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-150 text-body-md" href="#">T-Shirts</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-150 text-body-md" href="#">Hoodies</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-150 text-body-md flex items-center gap-1.5" href="#">
+          Custom Studio
+          <span class="bg-primary-container text-white font-label-caps text-[9px] px-1.5 py-0.5 rounded tracking-wider">LAB</span>
+</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors duration-150 text-body-md" href="#">Our Story</a>
+</nav>
+<!-- Trailing Action Icons -->
+<div class="flex items-center space-x-5 text-on-surface">
+<button aria-label="Search catalog" class="hover:text-primary-container transition-colors duration-150 flex items-center" type="button">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</button>
+<button aria-label="Customer Profile" class="hover:text-primary-container transition-colors duration-150 flex items-center" type="button">
+<span class="material-symbols-outlined text-[22px]">person</span>
+</button>
+<button aria-label="Wishlist" class="relative hover:text-primary-container transition-colors duration-150 flex items-center" type="button">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+<span class="absolute -top-1.5 -right-2 bg-on-surface text-surface-container-lowest text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+</button>
+<button aria-label="Shopping Bag" class="relative hover:text-primary-container transition-colors duration-150 flex items-center" type="button">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute -top-1.5 -right-2 bg-primary-container text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">1</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main>
+<!-- 3. Editorial Hero Section -->
+<section class="relative bg-surface overflow-hidden border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Typographic Focus -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-6">
+<div class="inline-flex items-center gap-2">
+<span class="w-2.5 h-[1px] bg-primary-container"></span>
+<span class="font-label-caps text-label-caps tracking-widest text-on-surface-variant uppercase">
+                NEW SEASON / MONOCHROME &amp; STATEMENTS
+              </span>
+</div>
+<h1 class="font-display-mobile md:font-display text-display-mobile md:text-display text-on-surface tracking-tighter uppercase leading-[0.95]">
+              WEAR WHAT<br/>YOU THINK.
+            </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl">
+              Original statements. Your own creations. Heavyweight 240 GSM French Terry and combed cotton crafted to stand out in the streets.
+            </p>
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="h-[52px] px-8 bg-inverse-surface hover:bg-black text-surface-container-lowest font-subhead text-subhead rounded-sm flex items-center justify-center gap-2 transition-colors duration-200 shadow-sm" href="#featured-collection">
+<span>Shop The Collection</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="h-[52px] px-8 bg-surface-container-lowest border-2 border-primary-container text-on-surface hover:bg-surface-container-low font-subhead text-subhead rounded-sm flex items-center justify-center gap-2 transition-all duration-200" href="#custom-studio-section">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Create Your Own Studio</span>
+</a>
+</div>
+<!-- Trust Metas -->
+<div class="pt-6 border-t border-surface-container-highest flex flex-wrap items-center gap-y-2 gap-x-6 text-on-surface-variant font-label-caps text-label-caps tracking-wider uppercase">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span>
+<span>240 GSM Heavyweight Combed Cotton</span>
+</div>
+<span class="hidden sm:inline text-surface-dim">•</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span>
+<span>Screen &amp; DTF Japanese Pigments</span>
+</div>
+<span class="hidden sm:inline text-surface-dim">•</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary-container">check_circle</span>
+<span>Pan-India Delivery</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Mockup & Atelier Spec -->
+<div class="lg:col-span-5 relative">
+<div class="relative bg-surface-container-lowest p-4 md:p-6 border border-surface-container-highest shadow-sm">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A minimalist editorial lookbook photograph of a model in a high-key architectural studio wearing an oversized boxy 240 GSM chalk-white luxury cotton t-shirt with a sharp minimalist black typographical graphic reading OVERTHINKING IN 4K. Soft neutral shadows, clean concrete backdrop, precise studio lighting, contemporary Japanese streetwear aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAatnxRTmAEMj4EXljhY-9yyEtJE6Wsc7LuEqR7Iw0B1nCYCjYQOUNIHeerC7eTeWiUYb8olQzn06Jfl_hT6J-mIuMuv7Y-0A1fl2dPtW9ss8nws3_vnSpzEI8Cpwi-h1x7ZtItkOxAxBt0oKl7FtE1TYMHCZ35eRrYlIvPP78lVBeNyolK8WOSdG_8WrBDjrhwZPz4XK7BHRPIPmk1-op_ASiJkPmnpqtJeAXYL36bTNROl8mvw1E"/>
+<!-- Floating Graphic Overlay Tag -->
+<div class="absolute top-4 left-4 bg-inverse-surface/90 text-inverse-on-surface px-3 py-1 font-label-caps text-[10px] tracking-widest uppercase">
+                  Statement Tee // 01
+                </div>
+<!-- Floating Spec Tag Bottom Right -->
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md border border-surface-container-highest px-3 py-2 text-left shadow-sm">
+<div class="font-label-caps text-[9px] tracking-widest text-primary-container uppercase font-semibold">Drop 04 // Studio Limited</div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">SILENCE IS LUXURY</div>
+<div class="font-body-sm text-[11px] text-secondary">Heavy French Combed Terry • Boxy Fit</div>
+</div>
+</div>
+</div>
+<!-- Industrial Accent Lines -->
+<div class="hidden sm:flex absolute -bottom-3 -left-3 bg-surface border border-surface-container-highest px-3 py-1 items-center gap-2 text-on-surface-variant font-label-caps text-[9px] tracking-widest uppercase">
+<span class="w-1.5 h-1.5 bg-primary-container rounded-full"></span>
+              Architectural Standard 1.0
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Shop By Category -->
+<section class="py-16 md:py-24 bg-surface-container-lowest border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-4 border-b border-surface-container-highest">
+<div>
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase font-semibold">Curated Silhouettes</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight mt-1">Shop By Category</h2>
+</div>
+<a class="mt-4 md:mt-0 font-body-sm text-body-sm font-semibold text-on-surface hover:text-primary-container inline-flex items-center gap-1 transition-colors" href="#">
+<span>Explore Complete Matrix</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- 4-Card Category Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: Graphic T-Shirts -->
+<a class="group relative bg-surface border border-surface-container-highest hover:border-on-surface transition-all duration-200 overflow-hidden flex flex-col" href="#">
+<div class="aspect-[3/4] w-full overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end studio product photograph of a premium heavy boxy cotton graphic t-shirt laid on clean minimalist neutral stone, displaying subtle raw typography and structured collar ribs under sharp overhead studio lighting with a calm minimal palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0u3IwwpJ6lbCwlHLt5wMGxRK-ea4FhG8S7plbyAOvKZA_HwvnsHwTJOv4_eELu6sAyN14nXPKicJUVyO7h4Xsb16FQFXsln2e-grWqARZbISOw1DNF3dshwWwStbrdxk-LdWSnLa9QnoBr9OTpOh_LZ_WWET5mcEPge_ukwF9k2XSWOnVdqP4WC_5EHRj_pG8DWg0OWnSWGPd3W6AF5MaNCBgP2JGFZ9vpNbCGYjtDQttj1vsJzY"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-[10px] px-2 py-0.5 tracking-wider uppercase">240 GSM</span>
+</div>
+<div class="p-5 flex items-center justify-between border-t border-surface-container-highest bg-surface-container-lowest">
+<div>
+<h3 class="font-headline-sm text-[1.1rem] text-on-surface group-hover:text-primary-container transition-colors">Graphic T-Shirts</h3>
+<p class="font-body-sm text-body-sm text-secondary">Heavyweight boxy tees</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Category 2: Hoodies & Sweats -->
+<a class="group relative bg-surface border border-surface-container-highest hover:border-on-surface transition-all duration-200 overflow-hidden flex flex-col" href="#">
+<div class="aspect-[3/4] w-full overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Contemporary streetwear luxury drop-shoulder heavyweight hoodie in deep charcoal black, captured on a clean off-white pedestal with architectural shadows and visible dense 400 GSM French Terry looped fabric texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpOVbCdhu2RI7R346i35ZbvVi32x9etGxNLP-nv15jx8BBJ1_wZQJLPjd2MtWR9rxBPWNmexXpZCXMf8nmVwTjnkOxIwgiGd_6-7SK74JdSKvB7cax9Y6_xIWwaW7gIH-_SIMou5f4oCjwzQlZBt5Wn1M5pLXozNEwC0Z8rxq0OyMtqKz8L9kzgTDt6s1e33Hi8euietlR24Zz_ii4IdVVzfC-EnqqDFV3IeHztmHQvwZ8SFHHnjw"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-[10px] px-2 py-0.5 tracking-wider uppercase">400 GSM</span>
+</div>
+<div class="p-5 flex items-center justify-between border-t border-surface-container-highest bg-surface-container-lowest">
+<div>
+<h3 class="font-headline-sm text-[1.1rem] text-on-surface group-hover:text-primary-container transition-colors">Hoodies &amp; Sweats</h3>
+<p class="font-body-sm text-body-sm text-secondary">Dense French Terry</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Category 3: Custom Mugs -->
+<a class="group relative bg-surface border border-surface-container-highest hover:border-on-surface transition-all duration-200 overflow-hidden flex flex-col" href="#">
+<div class="aspect-[3/4] w-full overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist design ceramic matte mug in raw bone white with a clean architectural typographic print on the front, set in a bright contemporary Scandinavian kitchen on a pale wooden table bathed in soft natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcPn4XO3hU-V7FdtFQrivEJBVg8IRx_yg3bgdwrD-uPFHgexkncYh_S4WWeCSVa49REwZGNWVO4z_h1IKvUq3XkefaYJRncnI8OB0KahMrGCkJ4kK69Yl7t4vGaFPMDU_31cZzbfp8j1k0ayFHsKlZgMSIfhP50qrI21MINXDdKVaVw_wiGn0dKUDlCuy8jeB3auT1HSzD_frmfPxH456ZjshEF5MmPH96RX_G6O8fh0b8YwRTrfs"/>
+<span class="absolute top-3 left-3 bg-primary-container text-white font-label-caps text-[10px] px-2 py-0.5 tracking-wider uppercase">Custom Ready</span>
+</div>
+<div class="p-5 flex items-center justify-between border-t border-surface-container-highest bg-surface-container-lowest">
+<div>
+<h3 class="font-headline-sm text-[1.1rem] text-on-surface group-hover:text-primary-container transition-colors">Custom Mugs</h3>
+<p class="font-body-sm text-body-sm text-secondary">Ceramic matte vessels</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Category 4: Printed Caps & Headwear -->
+<a class="group relative bg-surface border border-surface-container-highest hover:border-on-surface transition-all duration-200 overflow-hidden flex flex-col" href="#">
+<div class="aspect-[3/4] w-full overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Low-profile washed black cotton dad cap featuring clean micro-embroidered typography, styled on a minimalist architectural brass stand in an upscale apparel boutique with soft diffused studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSS96Sq6AuFSiNN_mRA5r0DtmXeIvIc5WiPjF81epv4WZaTcGTSv5d28cFJqgIGXj4v8mNuIAQ-faUiaQKwIA5WznstYxLk2mPxYksSDi5WZ5VfbW6kINlDdl4tvFWGYJs-Vdgp89DSqXPyhhemv2mSMBpwG7KdiOD630eox6nw7nqSW-QEDs85KN_w0O3_NnXLUO84hVyZIoIrJuolaCx6AzC-TiWeFVdMKe1GkWPVhDZwewSK0g"/>
+<span class="absolute top-3 left-3 bg-inverse-surface text-inverse-on-surface font-label-caps text-[10px] px-2 py-0.5 tracking-wider uppercase">Unstructured</span>
+</div>
+<div class="p-5 flex items-center justify-between border-t border-surface-container-highest bg-surface-container-lowest">
+<div>
+<h3 class="font-headline-sm text-[1.1rem] text-on-surface group-hover:text-primary-container transition-colors">Printed Caps</h3>
+<p class="font-body-sm text-body-sm text-secondary">Low-profile dad hats</p>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. Featured Collection Grid -->
+<section class="py-16 md:py-24 bg-surface border-b border-surface-container-highest" id="featured-collection">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase font-semibold">Drop 04 Archive</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight mt-1">Made To Make A Statement.</h2>
+<p class="font-subhead text-subhead text-secondary max-w-2xl mt-2">
+            Curated streetwear graphics, witty cultural motifs, and raw typography on luxury silhouettes.
+          </p>
+</div>
+<!-- 4-Column Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest group hover:border-on-surface transition-all duration-200 flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="Product photograph of an oversized washed black heavyweight t-shirt with golden crackle graphic print inspired by Japanese Kintsugi art and raw modern typography, crisp minimal off-white background with subtle tonal lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9fscVt6GrJSN95cILIsDfxU605xJht-_cbYsZ4elH-vX6a2_rN0UDcIWIispWLf6I9029FFtcoO4GeZ2pHLyN-WdZbGcIt-99jMz09hGv48XQHb8cVBUPDmNrjwyJ5A3a30RKjmmQnTvIO09eohhc6RtCzQ0Lj5gHl7u75j1VRyJeKtgSdO1Xs0W01OumRVuK5c3kpRveod-2gwcd3D5k4qD_VAH8Bp0DNZa1bbx7-K6j_7C95Ds"/>
+<div class="absolute top-3 left-3 bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-widest">
+                240 GSM HEAVY
+              </div>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2">
+<button class="w-full py-2.5 bg-inverse-surface hover:bg-black text-surface-container-lowest font-body-sm text-body-sm font-semibold rounded-sm transition-colors text-center" type="button">
+                  Quick Add
+                </button>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#1e1e1e] border border-surface-dim ring-1 ring-offset-1 ring-on-surface" title="Washed Black"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#e8e6df] border border-surface-dim" title="Vintage Bone"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#4a5043] border border-surface-dim" title="Olive"></span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary-container transition-colors">
+                    'Kintsugi Broken Mindset' Heavy Tee
+                  </h3>
+<span class="font-label-caps text-[10px] tracking-wider text-secondary uppercase">Edition 04 / Boxy Cut</span>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold whitespace-nowrap">
+                  ₹1,899
+                </div>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest group hover:border-on-surface transition-all duration-200 flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="Clean front view of a chalk white boxy streetwear t-shirt with sleek bold modern sans-serif typography across the chest reading OFFLINE IS THE NEW LUXURY, captured under high-contrast editorial studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDouf07IRg1R8fF1MZAQIcg4qtYUPGJZbDjmC0JjaFcZ3ihGL4gWbKqwRj9ppeJuq0oK0Z5p-XwWRqSP83YsSR8miVmfrp6o7SUmu8r1zhNHz4H4NXXISO-90jQORU185e51El9W75flsTs8sNQUUBAZagya-b2cGJfQ5I-U2ukoK8ore286KgMZAuif9_MKex-Fu58z5rKYKm0n75gG1tMDyfmWyN1YgrBgv6Vsx3VlISbHIbFv1c"/>
+<div class="absolute top-3 left-3 bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-widest">
+                BOXY FIT
+              </div>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2">
+<button class="w-full py-2.5 bg-inverse-surface hover:bg-black text-surface-container-lowest font-body-sm text-body-sm font-semibold rounded-sm transition-colors text-center" type="button">
+                  Quick Add
+                </button>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f4f4f2] border border-surface-dim ring-1 ring-offset-1 ring-on-surface" title="Chalk White"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#5f6368] border border-surface-dim" title="Slate Gray"></span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary-container transition-colors">
+                    'Offline Is The New Luxury' Fit Tee
+                  </h3>
+<span class="font-label-caps text-[10px] tracking-wider text-secondary uppercase">Edition 02 / Combed Cotton</span>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold whitespace-nowrap">
+                  ₹1,699
+                </div>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest group hover:border-on-surface transition-all duration-200 flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="High quality lookbook shot of a heavy pitch black 420 GSM drop-shoulder hoodie with subtle architectural white graphic lines reading METROPOLITAN CHAOS on dense premium fabric with ribbed cuffs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpESsX3dJdDFoXPd5qLcxuF7RQ1jIiFzacK7ecIdRtbaaSM0pWl26TRRxq4wdmygwlQCKQMIF8KpNqD-fglblQCSy0F-UgbcPzQDgsjtXCcPFUrd3znwf73aJOUFYzmr3yRBZ7o74ZLQhTyvDMuOgOxSqqfRI_5G7_CFws1xaQMVFF1dFiWSQ8BySdtfuoAyTFLQpjjH8en8R5HK6MRANklVj2z_9DohhgCN0HK96rBDL6nd6G2Nk"/>
+<div class="absolute top-3 left-3 bg-primary-container text-white font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-widest font-semibold">
+                BESTSELLER
+              </div>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2">
+<button class="w-full py-2.5 bg-inverse-surface hover:bg-black text-surface-container-lowest font-body-sm text-body-sm font-semibold rounded-sm transition-colors text-center" type="button">
+                  Quick Add
+                </button>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#111111] border border-surface-dim ring-1 ring-offset-1 ring-on-surface" title="Pitch Black"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#7a6455] border border-surface-dim" title="Heather Mocha"></span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary-container transition-colors">
+                    'Metropolitan Chaos' 420 GSM Hoodie
+                  </h3>
+<span class="font-label-caps text-[10px] tracking-wider text-secondary uppercase">Edition 01 / French Terry</span>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold whitespace-nowrap">
+                  ₹3,299
+                </div>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest border border-surface-container-highest group hover:border-on-surface transition-all duration-200 flex flex-col justify-between">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" data-alt="Studio catalog product photo of a sage dust colored minimalist oversized t-shirt with a discreet typography block reading ZERO EXPECTATIONS positioned subtly below the collarbone, high quality cotton texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBblcrZ0TsHaXwZT5WVSrG3GZGUwVXrAgXhzwfkCIZDL8wqldxHx-jA43ABGuIyhw18LGCVgC_X-16VSBmtp2I5l8ZJq7h3uOEPpSEjrW_fkpbStlynFEnvnFFWnPXsgiexS-IPjQUzcV0qKCBmnhVJwCswsXUEn4DYVA57a-thbWMxgqnQxtDSn3rrqnjQPn8HqgVHk52-Q7gLKgWY5vfqfB9ZzhqV8jo8DWgfRoZ1EltilBswb7g"/>
+<div class="absolute top-3 left-3 bg-inverse-surface text-surface-container-lowest font-label-caps text-[9px] px-2 py-0.5 uppercase tracking-widest">
+                RESTOCKED
+              </div>
+<button aria-label="Add to Wishlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-200 flex gap-2">
+<button class="w-full py-2.5 bg-inverse-surface hover:bg-black text-surface-container-lowest font-body-sm text-body-sm font-semibold rounded-sm transition-colors text-center" type="button">
+                  Quick Add
+                </button>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#99a69b] border border-surface-dim ring-1 ring-offset-1 ring-on-surface" title="Sage Dust"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#202020] border border-surface-dim" title="Vintage Black"></span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface group-hover:text-primary-container transition-colors">
+                    'Zero Expectations' Typographic Tee
+                  </h3>
+<span class="font-label-caps text-[10px] tracking-wider text-secondary uppercase">Edition 03 / Minimalist Line</span>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold whitespace-nowrap">
+                  ₹1,499
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Split-Layout Custom Printing Promotional Section (Interactive Look) -->
+<section class="py-16 md:py-24 bg-surface-container-lowest border-b border-surface-container-highest" id="custom-studio-section">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase font-semibold">
+                LAB 01 / ON-DEMAND ATELIER
+              </span>
+</div>
+<h2 class="font-display-mobile md:font-display text-display-mobile md:text-headline-lg text-on-surface tracking-tight uppercase">
+              YOUR IDEA.<br/>YOUR STYLE.
+            </h2>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+              Upload your design, add your words, and turn something ordinary into something completely yours. Single piece orders or bulk crew merchandise with zero setup fees.
+            </p>
+<!-- Feature Bullet List -->
+<ul class="space-y-3 pt-2 font-body-md text-body-md text-on-surface">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container font-bold text-xs">✓</span>
+<span>Direct-To-Film (DTF) &amp; High-Density Screen Printing</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container font-bold text-xs">✓</span>
+<span>No minimum order quantity (MOQ: 1 Unit)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container font-bold text-xs">✓</span>
+<span>Free 300+ DPI vector file prep &amp; visual review</span>
+</li>
+</ul>
+<div class="pt-4">
+<a class="h-[52px] inline-flex items-center justify-center px-8 bg-primary-container hover:bg-[#e84a27] text-white font-headline-sm text-subhead rounded-sm shadow-md transition-colors duration-150" href="#">
+                Launch Custom Studio →
+              </a>
+<p class="font-label-caps text-[10px] text-secondary tracking-wider uppercase mt-2.5">
+                ⚡ Instant live 3D preview • Same day production dispatch available
+              </p>
+</div>
+</div>
+<!-- Right Column: Interactive Apparel Customizer Preview -->
+<div class="lg:col-span-7">
+<div class="bg-surface border border-surface-container-highest rounded-sm p-4 md:p-6 shadow-sm">
+<!-- Customizer Toolbar Header -->
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-highest text-body-sm font-medium">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[18px]">palette</span> Blank: Heavy Tee
+                  </span>
+<span class="text-surface-dim">|</span>
+<span class="text-secondary">Color: Washed Bone</span>
+</div>
+<div class="flex items-center gap-2 text-label-caps text-secondary uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-green-500"></span> 300 DPI Vector Ready
+                </div>
+</div>
+<!-- Canvas Workspace with Bounding Box Overlay -->
+<div class="relative my-4 aspect-[4/3] bg-surface-container-low border border-dashed border-surface-container-highest flex items-center justify-center overflow-hidden customizer-grid-pattern">
+<!-- Center Garment Graphic -->
+<div class="relative w-64 md:w-80 h-auto flex flex-col items-center">
+<img class="w-full object-contain filter drop-shadow-md" data-alt="A clean top-down flat-lay blank washed vintage bone heavyweight t-shirt arranged on an architecturally minimal grid workspace, showing fine combed cotton weave and reinforced seams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9o7ygGtvCYcX_paLNV6KOASb7jAreSRs18MJSOZLfnMlE-wbyEZQuq5_T8nbXAOb-iDVzawJybsG37YobZlUkDP5iAj3V5kz7Y-i8TVZrPZuxIzyCpG2J4xJ7FYSKeys16z8n3Y3QPeuIb-bKQK8LUodncXBhocueCreZ_lD3QdnMDXuSEQ-hc7Y4HgmzYosg57qPHMZcY7-FlzU1W-4HafU8R27AlSreKmW2UbqiFnggeEFF_4"/>
+<!-- Interactive Printable Bounding Box -->
+<div class="absolute top-[28%] w-[52%] h-[40%] border-2 border-primary-container bg-primary-container/5 flex flex-col items-center justify-center text-center p-2 cursor-move">
+<span class="font-headline-sm text-on-surface font-bold text-xs md:text-sm tracking-widest uppercase">
+                      NO BAD VIBES
+                    </span>
+<span class="font-label-caps text-[8px] text-primary-container uppercase mt-1 tracking-wider">
+                      Print Box Safe (12" x 14")
+                    </span>
+<!-- Drag Handles -->
+<span class="absolute -top-1.5 -left-1.5 w-3 h-3 bg-surface-container-lowest border-2 border-primary-container"></span>
+<span class="absolute -top-1.5 -right-1.5 w-3 h-3 bg-surface-container-lowest border-2 border-primary-container"></span>
+<span class="absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-surface-container-lowest border-2 border-primary-container"></span>
+<span class="absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-surface-container-lowest border-2 border-primary-container"></span>
+</div>
+</div>
+<!-- Floating Canvas Controls -->
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest border border-surface-container-highest px-3 py-1.5 flex items-center gap-3 text-xs shadow-sm">
+<span class="text-on-surface font-medium">Placement: Chest Center</span>
+<span class="text-surface-dim">/</span>
+<span class="text-secondary font-mono">X: 0mm  Y: +45mm</span>
+</div>
+</div>
+<!-- Upload Selector Dock -->
+<div class="p-3 bg-surface-container-lowest border border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<div class="w-10 h-10 rounded-sm bg-surface-container-low border border-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Upload Art / Typeset Text</div>
+<div class="font-label-caps text-[10px] text-secondary">SVG, AI, High-Res PNG (Min 300 DPI)</div>
+</div>
+</div>
+<div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+<button class="px-4 py-2 text-xs font-semibold uppercase tracking-wider border border-surface-container-highest hover:border-on-surface bg-surface transition-colors" type="button">
+                    Add Text
+                  </button>
+<button class="px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-on-surface text-surface hover:bg-black transition-colors" type="button">
+                    Upload File
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. How It Works (3 Minimal Steps) -->
+<section class="py-16 md:py-24 bg-surface border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase font-semibold">The Precision Protocol</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight mt-1">From Idea to Wardrobe</h2>
+<p class="font-subhead text-subhead text-secondary mt-2">Effortless creation built on industrial-standard Japanese garment engineering.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-highest flex flex-col justify-between relative group hover:border-on-surface transition-colors">
+<span class="font-headline-lg text-headline-lg text-surface-container-highest font-extrabold block group-hover:text-primary-container transition-colors">01</span>
+<div class="my-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Choose Your Canvas</h3>
+<p class="font-body-md text-body-md text-secondary">
+                Select from our curated blank matrix: 240 GSM boxy tees, 400 GSM French Terry hoodies, ceramic matte mugs, or unstructured cotton dad caps.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center text-label-caps text-secondary uppercase tracking-wider">
+<span>Standard Fit &amp; Oversized Available</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-highest flex flex-col justify-between relative group hover:border-on-surface transition-colors">
+<span class="font-headline-lg text-headline-lg text-surface-container-highest font-extrabold block group-hover:text-primary-container transition-colors">02</span>
+<div class="my-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Upload or Typeset</h3>
+<p class="font-body-md text-body-md text-secondary">
+                Drag and drop your raw vector artwork, photography, or typeset words directly in our browser customizer with real-time print layer preview.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center text-label-caps text-secondary uppercase tracking-wider">
+<span>Automated File DPI Enhancement</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-highest flex flex-col justify-between relative group hover:border-on-surface transition-colors">
+<span class="font-headline-lg text-headline-lg text-surface-container-highest font-extrabold block group-hover:text-primary-container transition-colors">03</span>
+<div class="my-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Handcrafted &amp; Shipped</h3>
+<p class="font-body-md text-body-md text-secondary">
+                Printed using high-spec Japanese DTF technology, heat cured, inspected for seams, and dispatched via express air courier in 3–5 business days.
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center text-label-caps text-secondary uppercase tracking-wider">
+<span>PAN-India Express Delivery</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Why Choose Us (Trust Grid) -->
+<section class="py-16 bg-surface-container-lowest border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Pillar 1 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-sm bg-surface-container-low border border-surface-container-highest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">layers</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-subhead text-on-surface font-bold">240-420 GSM Blanks</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Durable, heavy combed cotton and French Terry engineered for structure and comfort.</p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-sm bg-surface-container-low border border-surface-container-highest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-subhead text-on-surface font-bold">Fade-Proof Pigments</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Japanese water-based DTF inks tested to withstand 60+ domestic machine wash cycles.</p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-sm bg-surface-container-low border border-surface-container-highest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-subhead text-on-surface font-bold">100% Secure Checkout</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Seamless UPI, Credit/Debit cards, Net Banking, and COD across 28,000+ PIN codes.</p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-sm bg-surface-container-low border border-surface-container-highest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-subhead text-on-surface font-bold">Express Shipping</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Free delivery on orders over ₹1,499 with 7-day hassle-free size exchange protocol.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Social Proof / Verified Community -->
+<section class="py-16 md:py-24 bg-surface border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container uppercase font-semibold">Community Verified</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight mt-1">Worn Across India.</h2>
+</div>
+<div class="mt-4 md:mt-0 font-body-sm text-body-sm text-secondary flex items-center gap-2">
+<span class="font-bold text-on-surface">4.9 / 5.0 Rating</span> from 1,240+ verified streetwear orders.
+          </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-container-highest flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-primary-container text-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-surface-container-low text-on-surface font-label-caps text-[9px] px-2 py-0.5 tracking-wider uppercase">Verified Buyer</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6 leading-relaxed">
+                "The 240 GSM weight is real. Most brands claim heavyweight and send flimsy fabric, but Shabeena Studio's boxy cut holds its drop-shoulder shape even after five washes."
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low overflow-hidden border border-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Close-up candid portrait of a stylish young creative in Mumbai wearing a black oversized crewneck t-shirt with natural outdoor afternoon urban light and clean minimalist composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-hzYIdI9gotXlDJ2rvnvR9thuMOWji86VNYkozGYeaD-WizcP-tCoqOvdRkvouYy1U60mtWAynEBX56OM6ZdDzuAXqecJOTAG8aTzKhvw8ivwN_vXAegrWn5EQz_huwJgo8am_dP1MlqXemLMcmMcp23xbXHOzt5BucJVsJhDV1lPRR8i9bXQjQLsIUV31g_cZdTDwFTU7GZmnChcL0Qm_g21vZUxlRuQaNwm730qMvDEyG7yNVA"/>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Arjun K.</div>
+<div class="font-label-caps text-[10px] text-secondary tracking-wider uppercase" data-location="Mumbai" style="">Bandra West, Mumbai</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-container-highest flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-primary-container text-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-surface-container-low text-on-surface font-label-caps text-[9px] px-2 py-0.5 tracking-wider uppercase">Custom Lab Order</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6 leading-relaxed">
+                "Used their Custom Studio for our design agency's annual merch. The vector upload workflow was seamless and the Japanese DTF ink is sharp with zero rubbery peel."
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low overflow-hidden border border-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Portrait of an Indian woman art director in Bengaluru smiling in a minimal concrete modern office setting, wearing a bone-white custom printed heavy cotton tee with crisp typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI_XrvQazEF60NKserWBaXVmO8Ksa1izUdKZrj98pg2SE1I6x4ICY761i1sE41YLNzGdBZwIfxGNM025jD_ZdzUGK80o6Jc3U1kFVZW6MSmk8yBOjLwz44Czr4ZjXHGlJ47yHJdfoNNHvTbSOrQtyedEa45W_3xoqkdtnCkSugIebPIjhZ9-gHcW81soEGg-FhsHU2tqEmwFdXRNiLZjmlVaXCrUS1UhSX9ZH3le65Iecy2EgJAi0"/>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Meera Sen</div>
+<div class="font-label-caps text-[10px] text-secondary tracking-wider uppercase" data-location="Bengaluru" style="">Indiranagar, Bengaluru</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-6 border border-surface-container-highest flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex text-primary-container text-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-surface-container-low text-on-surface font-label-caps text-[9px] px-2 py-0.5 tracking-wider uppercase">Verified Buyer</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6 leading-relaxed">
+                "Ordered the 'Metropolitan Chaos' hoodie. The 420 GSM French Terry is dense and luxurious. Delivery to Delhi took just 3 days. Truly world-class craftsmanship."
+              </p>
+</div>
+<div class="pt-4 border-t border-surface-container-highest flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-low overflow-hidden border border-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Editorial candid street style portrait of a young man in Delhi NCR wearing a pitch-black heavyweight structured hoodie with architectural skyline in soft focus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnjYpnx4hxz5fuem6F-B-_4NDbYPmC05G-dMwZ5glX7drnSQ6jo80KS4a67rddQN8LbOC8dvKIHE59sipiRH4a5fBS2B1eZ-SFoM0D8Gc-d9zcbmQisFIGz6QoeKwibmx5QcgEbUHCEPkJrRPmEU1yjKNhvsk68ZkcgJKQmhJySxbQlwXz-uzK-9NNecAb27UJcXLsNFdDSiWUwv9Irfelzz_qnhgLrxKPjX2gbKuRoB3vjjJQP60"/>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Kabir R.</div>
+<div class="font-label-caps text-[10px] text-secondary tracking-wider uppercase" data-location="Delhi" style="">Hauz Khas, Delhi NCR</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Bar / Cultural Dispatch -->
+<section class="py-12 bg-surface-container-low border-b border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Join The Studio Dispatch</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Get early access to limited edition drops, secret discount codes, and custom blanks.</p>
+</div>
+<form class="flex items-center w-full lg:w-auto max-w-md gap-2" onsubmit="event.preventDefault();">
+<input class="bg-surface-container-lowest border border-surface-container-highest px-4 py-3 text-body-sm text-on-surface rounded-sm focus:border-on-surface focus:ring-0 w-full placeholder:text-secondary-fixed-dim" placeholder="Enter your email address" type="email"/>
+<button class="bg-on-surface hover:bg-black text-surface px-6 py-3 font-subhead text-subhead rounded-sm shrink-0 transition-colors" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- 10. Footer (Shared Component: Footer) -->
+<footer class="bg-surface-container-lowest font-body-sm text-body-sm docked full-width border-t border-surface-container-highest transition-colors duration-200">
+<div class="w-full max-w-7xl mx-auto px-4 md:px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-surface-container-highest">
+<!-- Brand Narrative Column -->
+<div class="md:col-span-5 space-y-4">
+<a class="font-headline-sm text-headline-sm font-bold tracking-widest uppercase text-on-surface block" href="#">
+            SHABEENA STUDIO
+          </a>
+<p class="font-body-md text-body-md text-secondary max-w-sm">
+            Contemporary minimalist streetwear and custom garment atelier based in India. Blending Japanese structural silhouettes with precision printing technologies.
+          </p>
+<div class="flex items-center space-x-4 pt-2 text-on-surface">
+<a aria-label="Instagram" class="hover:text-primary-container transition-colors" href="#">
+<span class="font-label-caps text-xs tracking-wider uppercase font-bold">IG / @shabeenastudio</span>
+</a>
+<span class="text-surface-dim">•</span>
+<a aria-label="Twitter" class="hover:text-primary-container transition-colors" href="#">
+<span class="font-label-caps text-xs tracking-wider uppercase font-bold">X / @shabeenahq</span>
+</a>
+</div>
+</div>
+<!-- Links Matrix Column -->
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div>
+<h5 class="font-label-caps text-label-caps tracking-widest text-on-surface uppercase font-semibold mb-4">Storefront</h5>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">Shop All</a></li>
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">Custom Studio</a></li>
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">Size Guide &amp; Fabric Care</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps tracking-widest text-on-surface uppercase font-semibold mb-4">Logistics</h5>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">PAN-India Shipping</a></li>
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">WhatsApp Concierge</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps tracking-widest text-on-surface uppercase font-semibold mb-4">Legal</h5>
+<ul class="space-y-2.5">
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary-container transition-colors duration-150" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Footer Bottom Row -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-secondary text-xs">
+          © 2024 SHABEENA STUDIO. Crafted with precision for India. All rights reserved.
+        </p>
+<div class="flex items-center gap-4 text-xs text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600">verified</span>
+            UPI / Cards / NetBanking Supported
+          </span>
+<span class="text-surface-dim">•</span>
+<span>Fast PAN-India Dispatch</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
